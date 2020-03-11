@@ -23,7 +23,7 @@ modules = [
   'docker',
 ]
 
-node ('global') {
+node ('master') {
 
   wrap([$class: 'AnsiColorBuildWrapper', 'colorMapName': 'XTerm', 'defaultFg': 1, 'defaultBg': 2]) {
     withEnv(['CI=true']) {
